@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:sac="urn:oasis:names:specification:ubl:schema:xsd:SignatureAggregateComponents-2" xmlns:sbc="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2" xmlns:sts="dian:gov:co:facturaelectronica:Structures-2-1" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2     http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <sts:DianExtensions>
+          <sts:InvoiceControl>
+            <sts:InvoiceAuthorization>18764061451065</sts:InvoiceAuthorization>
+            <sts:AuthorizationPeriod>
+              <cbc:StartDate>2023-12-06</cbc:StartDate>
+              <cbc:EndDate>2024-12-06</cbc:EndDate>
+            </sts:AuthorizationPeriod>
+            <sts:AuthorizedInvoices>
+              <sts:Prefix>TV1</sts:Prefix>
+              <sts:From>28862</sts:From>
+              <sts:To>100000</sts:To>
+            </sts:AuthorizedInvoices>
+          </sts:InvoiceControl>
+          <sts:InvoiceSource>
+            <cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode>
+          </sts:InvoiceSource>
+          <sts:SoftwareProvider>
+            <sts:ProviderID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="6" schemeName="31">900390126</sts:ProviderID>
+            <sts:SoftwareID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">82d21092-144e-4b66-b720-6cdf9f661767</sts:SoftwareID>
+          </sts:SoftwareProvider>
+          <sts:SoftwareSecurityCode schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">46a70e89716ac1b5745147b28474db1fcf854738929ea9a2c2a5358a82f9ce9de9b139f2b45bdf9c64d451bddf4f02a1</sts:SoftwareSecurityCode>
+          <sts:AuthorizationProvider>
+            <sts:AuthorizationProviderID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="4" schemeName="31">800197268</sts:AuthorizationProviderID>
+          </sts:AuthorizationProvider>
+          <sts:QRCode>NumFac: TV130838
+FecFac: 2024-01-20
+HorFac: 09:30:41-05:00
+NitFac: 900432848
+DocAdq: 900316777
+ValFac: 23109.2435
+ValIva: 4390.75
+ValOtroIm: 0.00
+ValTolFac: 27500.0000
+CUFE: ae90714015239b03668423115f89b245e149634140dfbdf8cb734d671a13fb79262333cbcbc1a2a07b4dbadcb71df8fb
+https://catalogo-vpfe.dian.gov.co/document/searchqr?documentkey=ae90714015239b03668423115f89b245e149634140dfbdf8cb734d671a13fb79262333cbcbc1a2a07b4dbadcb71df8fb</sts:QRCode>
+        </sts:DianExtensions>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+  <ext:UBLExtension><ext:ExtensionContent><ds:Signature Id="xmldsig-9c5e75f6-48f5-45e9-8656-dadbc3498370">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<ds:Reference Id="xmldsig-9c5e75f6-48f5-45e9-8656-dadbc3498370-ref0" URI="">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>QVQE/pGeq9f8KL6po4jdJ6A4tTrvX9ft7k5/rzdsnDQ=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#xmldsig-9c5e75f6-48f5-45e9-8656-dadbc3498370-keyinfo">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>xvrJ9kbz6g/C+WH9Z8gv5VLCE1pp8pFVo9pUSVEjWXI=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-9c5e75f6-48f5-45e9-8656-dadbc3498370-signedprops">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>q8btjEXuaalYwvPae6CCHS9kQIPmpeOj4lKfwScJ/Xo=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue Id="xmldsig-9c5e75f6-48f5-45e9-8656-dadbc3498370-sigvalue">
+iYmC3LUhMiIXpCc/nZdh6TXsSOkjU2Ff/vPLBF7RdeJlCsFkEHaES41rRkVTT4vHmWu6WWvXF92a
+cfXIVWa6o4W+LvknVPfY/WkeUQwbjaXKn+Cgwhf/hly1t7409x+QNj9zsH6HWGfDSvi0lJSZqpEV
+uTwKyJX4G7bTpHMmw0reiFokIKEmxp6YMMNxp5BellmsapXcdNzQWSlAgKsb+FnKDQsUDCgXL0F6
+L1kN8urcC+DG0GVH8RmelYbTj7xXHCsQcOZkduzBTiHxmTTjLrbNvmHR3e2XYJinvxTETcd+oAym
+rcyERZMvIUi9cfimc7r44pm2M4XcVyWHtw5rHQ==
+</ds:SignatureValue>
+<ds:KeyInfo Id="xmldsig-9c5e75f6-48f5-45e9-8656-dadbc3498370-keyinfo">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIIYzCCBkugAwIBAgIIYLORlJv8E0YwDQYJKoZIhvcNAQELBQAwgbYxIzAhBgkqhkiG9w0BCQEW
+FGluZm9AYW5kZXNzY2QuY29tLmNvMSYwJAYDVQQDEx1DQSBBTkRFUyBTQ0QgUy5BLiBDbGFzZSBJ
+SSB2MjEwMC4GA1UECxMnRGl2aXNpb24gZGUgY2VydGlmaWNhY2lvbiBlbnRpZGFkIGZpbmFsMRIw
+EAYDVQQKEwlBbmRlcyBTQ0QxFDASBgNVBAcTC0JvZ290YSBELkMuMQswCQYDVQQGEwJDTzAeFw0y
+MzAxMjYyMjIzMDBaFw0yNDAxMjYyMjIyMDBaMIIBUTEdMBsGA1UECRMUQ0FSUkVSQSAxOSBOLiAy
+MCAtNzIxJjAkBgkqhkiG9w0BCQEWF1RPUk5JVkFSSU9TQEhPVE1BSUwuQ09NMSYwJAYDVQQDEx1J
+TlZFUlNJT05FUyBGT1JFUk8gSE5PUyBTLkEuUzETMBEGA1UEBRMKOTAwNDMyODQ4NzE2MDQGA1UE
+DBMtRW1pc29yIEZhY3R1cmEgRWxlY3Ryb25pY2EgLSBQZXJzb25hIEp1cmlkaWNhMTowOAYDVQQL
+EzFFbWl0aWRvIHBvciBBbmRlcyBTQ0QgQWMgMjYgNjlDIDAzIFRvcnJlIEIgT2YgNzAxMScwJQYD
+VQQKEx5TVElEVUFSVCBZRVNJVFQgIEZPUkVSTyBDQVNUUk8xDjAMBgNVBAcTBVlPUEFMMREwDwYD
+VQQIEwhDQVNBTkFSRTELMAkGA1UEBhMCQ08wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQDJD50knJDAyKiah0SOeZzruRf/A9cLf5UU1H6yZPFbdr7DoJL1kG1H8kCmKlZtk4Hv2IT+PSQW
+K0LXpGFDKrqUSGSkd1tXOXnyozNI0xoVqtXzr/k9RGVBA87xuEPEpdttqGljVX78Gp6NAvCj0ANe
+7Pm9xLaCmE/gJ/8ngoJ9dRRTMUruH2bthi155A5vLHChdVHMPcxuIAXi8egRJzhnz5yFo7qYoAI3
+ewtHeBXjNScfLZh0dlP1yWoukHqx8KSVkfpOUjPiNU6adAWnyoLW/1IoR8GaAJ14yfPUfKbHA7z4
+W/Bluppe30J1gXb8DkJZrk8PfCSPPE3p7kapnDMnAgMBAAGjggLVMIIC0TAMBgNVHRMBAf8EAjAA
+MB8GA1UdIwQYMBaAFDpXUNB3Gz7Wi+r/l5nX/4QCSCkPMDcGCCsGAQUFBwEBBCswKTAnBggrBgEF
+BQcwAYYbaHR0cDovL29jc3AuYW5kZXNzY2QuY29tLmNvMCIGA1UdEQQbMBmBF1RPUk5JVkFSSU9T
+QEhPVE1BSUwuQ09NMIIBuAYDVR0gBIIBrzCCAaswUAYNKwYBBAGB9EgBAQEGADA/MD0GCCsGAQUF
+BwIBFjFodHRwczovL3d3dy5hbmRlc3NjZC5jb20uY28vZG9jcy9EUENfQW5kZXNTQ0QucGRmMIIB
+VQYNKwYBBAGB9EgBAgYEADCCAUIwggE+BggrBgEFBQcCAjCCATAeggEsAEwAYQAgAHUAdABpAGwA
+aQB6AGEAYwBpAPMAbgAgAGQAZQAgAGUAcwB0AGUAIABjAGUAcgB0AGkAZgBpAGMAYQBkAG8AIABl
+AHMAdADhACAAcwB1AGoAZQB0AGEAIABhACAAbABhACAAUABDACAAZABlACAARgBhAGMAdAB1AHIA
+YQBjAGkA8wBuACAARQBsAGUAYwB0AHIA8wBuAGkAYwBhACAAeQAgAEQAUABDACAAZQBzAHQAYQBi
+AGwAZQBjAGkAZABhAHMAIABwAG8AcgAgAEEAbgBkAGUAcwAgAFMAQwBEAC4AIABDAPMAZABpAGcA
+bwAgAGQAZQAgAEEAYwByAGUAZABpAHQAYQBjAGkA8wBuADoAIAAxADYALQBFAEMARAAtADAAMAA0
+MB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDA5BgNVHR8EMjAwMC6gLKAqhihodHRwOi8v
+Y3JsLmFuZGVzc2NkLmNvbS5jby9DbGFzZUlJdjIuY3JsMB0GA1UdDgQWBBSAKG91zMNu/oTSlDdo
+AvWtN6CfLjAOBgNVHQ8BAf8EBAMCBeAwDQYJKoZIhvcNAQELBQADggIBAIcnZiA1GcU3pqZqhoTO
+pUmuKWNjNpCD/P8oXg5KKIiUEa3JwSfocs05AsIRkWkKnF/6+t4wSqC+AIhxXZJUKWeDm0uzfhyh
+Tok1UopsPjY48Qnr1UO1jsJaaXSFa+Tp8IaSTiM2/ASZb9In8FQSMV0eKjxDZP8F7xTijKZEic11
+kyy7el9Bcctcg+NyQvsax+G6z2gKYf5GKEJ+c471gsJ2bpVYBCDOHt356oRjzhCT+xTjjP6OGWpf
+Pn9m31yhRrvl6KNme1lGYP4LJN4OTfgaSRFhz2KcTvTd7BMz84/ItIScuCM+7LqelIgWnsjyMU35
+jtGITQYNkcQ0FT0uiYrNo4+0a4JmmS/HD6a5eMSv7FfyaBmI6t2EUCU7+IM64ddL4Gg2eIgdlX6i
+TQtTW7s0qjV3z0wb/yRPTUo9Rir8B7Jcr3HE5C1aqCB+g+Z5x6HPqS/I9CwMhev5BWIi5CnEC4yq
+sOD49BHpi4Mx4pPa8eTc8otXaqvAdBPhTnonPmL774TcWoIErMuRx/yHxNbsvoI7c9dfXb5vmx+A
+kFpVWkx2pdSZZJaaSisCyJr83EyHVX2fxbNkSRKUp79VavKS/beefgZZqphXX5zP0TELIKefGLh7
+EyEjgV1QmO1TGF8lx+jPyKNPUFO/hjhYD5+ru10Z5eUuQiT23PmKsLEF
+</ds:X509Certificate>
+<ds:X509SubjectName>C=CO,ST=CASANARE,L=YOPAL,O=STIDUART YESITT  FORERO CASTRO,OU=Emitido por Andes SCD Ac 26 69C 03 Torre B Of 701,T=Emisor Factura Electronica - Persona Juridica,SERIALNUMBER=9004328487,CN=INVERSIONES FORERO HNOS S.A.S,EMAILADDRESS=TORNIVARIOS@HOTMAIL.COM,STREET=CARRERA 19 N. 20 -72</ds:X509SubjectName>
+<ds:X509IssuerSerial>
+<ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes SCD,OU=Division de certificacion entidad final,CN=CA ANDES SCD S.A. Clase II v2,1.2.840.113549.1.9.1=#1614696e666f40616e6465737363642e636f6d2e636f</ds:X509IssuerName>
+<ds:X509SerialNumber>6968073115930465094</ds:X509SerialNumber>
+</ds:X509IssuerSerial>
+</ds:X509Data>
+</ds:KeyInfo>
+<ds:Object><xades:QualifyingProperties Target="#xmldsig-9c5e75f6-48f5-45e9-8656-dadbc3498370"><xades:SignedProperties Id="xmldsig-9c5e75f6-48f5-45e9-8656-dadbc3498370-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2024-01-22T09:25:41.754-05:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>KN62nAIzDoMgBiHtXD6+pASHeke1hUqwv32HN/bC7d0=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes SCD,OU=Division de certificacion entidad final,CN=CA ANDES SCD S.A. Clase II v2,1.2.840.113549.1.9.1=#1614696e666f40616e6465737363642e636f6d2e636f</ds:X509IssuerName><ds:X509SerialNumber>6968073115930465094</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://facturaelectronica.dian.gov.co/politicadefirma/v2/politicadefirmav2.pdf</xades:Identifier><xades:Description>Política de firma para facturas electrónicas de la República de Colombia</xades:Description></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object>
+</ds:Signature></ext:ExtensionContent></ext:UBLExtension></ext:UBLExtensions>
+  <cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>10</cbc:CustomizationID>
+  <cbc:ProfileID>DIAN 2.1: Factura Electrónica de Venta</cbc:ProfileID>
+  <cbc:ProfileExecutionID>1</cbc:ProfileExecutionID>
+  <cbc:ID>TV130838</cbc:ID>
+  <cbc:UUID schemeID="1" schemeName="CUFE-SHA384">ae90714015239b03668423115f89b245e149634140dfbdf8cb734d671a13fb79262333cbcbc1a2a07b4dbadcb71df8fb</cbc:UUID>
+  <cbc:IssueDate>2024-01-20</cbc:IssueDate>
+  <cbc:IssueTime>09:30:41-05:00</cbc:IssueTime>
+  <cbc:DueDate>2024-01-20</cbc:DueDate>
+  <cbc:InvoiceTypeCode>01</cbc:InvoiceTypeCode>
+  <cbc:Note/>
+  <cbc:DocumentCurrencyCode>COP</cbc:DocumentCurrencyCode>
+  <cbc:LineCountNumeric>2</cbc:LineCountNumeric>
+  <cac:AccountingSupplierParty>
+    <cbc:AdditionalAccountID schemeAgencyID="195" schemeID="7" schemeName="31">1</cbc:AdditionalAccountID>
+    <cac:Party>
+      <cbc:IndustryClassificationCode>4752</cbc:IndustryClassificationCode>
+      <cac:PartyName>
+        <cbc:Name>TORNIVARIOS</cbc:Name>
+      </cac:PartyName>
+      <cac:PhysicalLocation>
+        <cac:Address>
+          <cbc:ID>50001</cbc:ID>
+          <cbc:CityName>VILLAVICENCIO</cbc:CityName>
+          <cbc:PostalZone>500004</cbc:PostalZone>
+          <cbc:CountrySubentity>Meta</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>50</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>CRA 36 NO 23 - 59</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:Address>
+      </cac:PhysicalLocation>
+      <cac:PartyTaxScheme>
+        <cbc:RegistrationName>INVERSIONES FORERO HNOS SAS</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="7" schemeName="31">900432848</cbc:CompanyID>
+        <cbc:TaxLevelCode listName="No aplica">O-23</cbc:TaxLevelCode>
+        <cac:RegistrationAddress>
+          <cbc:ID>85001</cbc:ID>
+          <cbc:CityName>YOPAL</cbc:CityName>
+          <cbc:PostalZone>850001</cbc:PostalZone>
+          <cbc:CountrySubentity>Casanare</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>85</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>CR 19 20 72</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:RegistrationAddress>
+        <cac:TaxScheme>
+          <cbc:ID>01</cbc:ID>
+          <cbc:Name>IVA</cbc:Name>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>INVERSIONES FORERO HNOS SAS</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="7" schemeName="31">900432848</cbc:CompanyID>
+        <cac:CorporateRegistrationScheme>
+          <cbc:ID>TV1</cbc:ID>
+        </cac:CorporateRegistrationScheme>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:Name>JOSE HECTOR FORERO HERRERA</cbc:Name>
+        <cbc:Telephone>3202107236</cbc:Telephone>
+        <cbc:Telefax>86437254</cbc:Telefax>
+        <cbc:ElectronicMail>gerencia@tornivarios.com.co</cbc:ElectronicMail>
+      </cac:Contact>
+    </cac:Party>
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cbc:AdditionalAccountID>1</cbc:AdditionalAccountID>
+    <cac:Party>
+      <cac:PhysicalLocation>
+        <cac:Address>
+          <cbc:ID>50001</cbc:ID>
+          <cbc:CityName>VILLAVICENCIO</cbc:CityName>
+          <cbc:CountrySubentity>META</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>50</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>CL 5 A 33 34</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:Address>
+      </cac:PhysicalLocation>
+      <cac:PartyTaxScheme>
+        <cbc:RegistrationName>AGROPECUARIA  PACARAIMA S.A.S</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="6" schemeName="31">900316777</cbc:CompanyID>
+        <cbc:TaxLevelCode listName="No aplica">R-99-PN</cbc:TaxLevelCode>
+        <cac:RegistrationAddress>
+          <cbc:ID>50001</cbc:ID>
+          <cbc:CityName>VILLAVICENCIO</cbc:CityName>
+          <cbc:CountrySubentity>META</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>50</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>CL 5 A 33 34</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:RegistrationAddress>
+        <cac:TaxScheme>
+          <cbc:ID>01</cbc:ID>
+          <cbc:Name>IVA</cbc:Name>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>AGROPECUARIA  PACARAIMA S.A.S</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="6" schemeName="31">900316777</cbc:CompanyID>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:ElectronicMail>agropacaraima.sas@gmail.com</cbc:ElectronicMail>
+      </cac:Contact>
+    </cac:Party>
+  </cac:AccountingCustomerParty>
+  <cac:PaymentMeans>
+    <cbc:ID schemeID="" schemeName="">1</cbc:ID>
+    <cbc:PaymentMeansCode>10</cbc:PaymentMeansCode>
+  </cac:PaymentMeans>
+  <cac:TaxTotal>
+    <cbc:TaxAmount currencyID="COP">4390.7565</cbc:TaxAmount>
+    <cbc:RoundingAmount currencyID="COP">0.0000</cbc:RoundingAmount>
+    <cac:TaxSubtotal>
+      <cbc:TaxableAmount currencyID="COP">23109.2435</cbc:TaxableAmount>
+      <cbc:TaxAmount currencyID="COP">4390.7565</cbc:TaxAmount>
+      <cac:TaxCategory>
+        <cbc:Percent>19.00</cbc:Percent>
+        <cac:TaxScheme>
+          <cbc:ID>01</cbc:ID>
+          <cbc:Name>IVA</cbc:Name>
+        </cac:TaxScheme>
+      </cac:TaxCategory>
+    </cac:TaxSubtotal>
+  </cac:TaxTotal>
+  <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="COP">23109.2435</cbc:LineExtensionAmount>
+    <cbc:TaxExclusiveAmount currencyID="COP">23109.2435</cbc:TaxExclusiveAmount>
+    <cbc:TaxInclusiveAmount currencyID="COP">27500.0000</cbc:TaxInclusiveAmount>
+    <cbc:AllowanceTotalAmount currencyID="COP">0.0000</cbc:AllowanceTotalAmount>
+    <cbc:PayableRoundingAmount currencyID="COP">0.0000</cbc:PayableRoundingAmount>
+    <cbc:PayableAmount currencyID="COP">27500.0000</cbc:PayableAmount>
+  </cac:LegalMonetaryTotal>
+  <cac:InvoiceLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="WSD">5.0000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">19747.8990</cbc:LineExtensionAmount>
+    <cbc:FreeOfChargeIndicator>false</cbc:FreeOfChargeIndicator>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">3752.1010</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">0.0000</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">19747.8990</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">3752.1010</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>DEWALT DISCO CORTE METAL FINO 4-1/2 X 0.</cbc:Description>
+      <cbc:BrandName>HKA</cbc:BrandName>
+      <cac:SellersItemIdentification>
+        <cbc:ID>10905500401</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999" schemeName="Estándar de adopción del contribuyente">HKA80</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">3949.5798</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="WSD">5.0000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine>
+    <cbc:ID>2</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="WSD">1.0000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">3361.3445</cbc:LineExtensionAmount>
+    <cbc:FreeOfChargeIndicator>false</cbc:FreeOfChargeIndicator>
+    <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="COP">638.6555</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">0.0000</cbc:RoundingAmount>
+      <cac:TaxSubtotal>
+        <cbc:TaxableAmount currencyID="COP">3361.3445</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">638.6555</cbc:TaxAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>IMT GUANTE NITRILO COLOR ECONOM. T7/8/9/10</cbc:Description>
+      <cbc:BrandName>HKA</cbc:BrandName>
+      <cac:SellersItemIdentification>
+        <cbc:ID>10200600002</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999" schemeName="Estándar de adopción del contribuyente">HKA80</cbc:ID>
+      </cac:StandardItemIdentification>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">3361.3445</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="WSD">1.0000</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+</Invoice>
