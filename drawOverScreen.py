@@ -8,7 +8,8 @@ class AreaSelector:
         self.root.attributes('-alpha', 0.5)  # Ventana semi-transparente con opacidad del 50%
         self.root.configure(bg='black')
         self.root.attributes('-topmost', True)  # Mantener al frente
-
+        # self.root.wm_attributes("-transparentcolor", "black")
+        
         self.canvas = tk.Canvas(self.root, cursor="cross", bg="black", highlightthickness=0)
         self.canvas.pack(fill=tk.BOTH, expand=True)
 

@@ -1,12 +1,8 @@
-import cv2
-import difflib
+
 import drawOverScreen as dos
 import ImageProcessor
 import TextProcessor
-
-def similarity_ratio(text1, text2):
-    return difflib.SequenceMatcher(None, text1, text2).ratio()
-
+import lookAt
 
 class StreamCCApp:
 	def __init__(self):
@@ -14,31 +10,32 @@ class StreamCCApp:
 		self.text_processor = TextProcessor.TextProcessor()
 		self.selector_area_scream = dos.AreaSelector()
 		self.coords = self.selector_area_scream.get_coordinates()
+		self.prev_text = ''
+
+	def action_get_text_from_image(self, image, translate = False):
+		text = self.image_processor.image_to_string(image)
+		if self.text_processor.similarity_ratio(text, self.prev_text) < 0.8:
+			if translate:
+				translated_text = self.text_processor.translateToEs(text)
+				return translated_text.text
+			else:
+				return text
+		self.prev_text = text
 
 	def run(self):
 		cropped_shadow = None
-		previous_text = ''
+
+		textDisplay = lookAt.TextDisplay()
 		while True:
 			try:	
 				image = self.image_processor.capture_screen(self.coords)
 				areaCC = self.image_processor.find_black_area(image)
 				cropped_image = self.image_processor.crop_image(image, areaCC)
 
-				if cropped_shadow is not None and not self.image_processor.equal_image(cropped_image, cropped_shadow):
-					text = self.image_processor.image_to_string(cropped_image)
-					if similarity_ratio(text, previous_text) < 0.8:
-						translated_text = self.text_processor.translateToEs(text)
-						print(translated_text.text)
-					previous_text = text
-				elif cropped_shadow is None:
-					text = self.image_processor.image_to_string(cropped_image)
-					translated_text = self.text_processor.translateToEs(text)
-					print(translated_text.text)
-					previous_text = text
-
-
-				if cv2.waitKey(1) & 0xFF == ord('q'):
-					break
+				if not self.image_processor.equal_image(cropped_image, cropped_shadow):
+					text = self.action_get_text_from_image(cropped_image, True)
+					print(text)
+					textDisplay.update_text(text)
 
 				cropped_shadow = cropped_image
 			
