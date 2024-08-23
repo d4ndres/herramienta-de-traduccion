@@ -6,7 +6,10 @@ class TextProcessor:
     self.translator = Translator()
 
   def translateToEs(self, text):
-    return self.translator.translate( text , dest='es')
-  
+    try:
+      return self.translator.translate( text , dest='es')
+    except:
+      return text
+    
   def similarity_ratio(self, text1, text2):
     return difflib.SequenceMatcher(None, text1, text2).ratio()
